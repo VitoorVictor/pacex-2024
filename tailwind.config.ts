@@ -59,18 +59,29 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       animation: {
-        slideIn: "slideIn 0.5s ease-out", // tempo e tipo de easing
-        slideOut: "slideOut 0.5s ease-in", // tempo e tipo de easing
+        scale: "pulse-animation 1.2s ease-in-out infinite 2.5s",
+        colorChange: "colorChange 2s ease-in-out infinite",
       },
       keyframes: {
-        slideIn: {
-          "0%": { transform: "translateX(-100%)" },
-          "100%": { transform: "translateX(0%)" },
+        colorChange: {
+          "0%, 100%": { backgroundColor: "#292524" },
+          "50%": { backgroundColor: "#78716c" },
         },
-        slideOut: {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+        "pulse-animation": {
+          "0%": {
+            transform: "scale(1)",
+          },
+          "50%": {
+            transform: "scale(1.02)", // Aumenta para 110%
+          },
+          "100%": {
+            transform: "scale(1)", // Diminui para 100%
+          },
         },
+      },
+      fontFamily: {
+        playfair: ['"Playfair Display"', "serif"],
+        cinzel: ['"Cinzel"', "serif"],
       },
     },
   },
