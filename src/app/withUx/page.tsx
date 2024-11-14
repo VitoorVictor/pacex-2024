@@ -323,13 +323,13 @@ export default function WithUX() {
           <div className="w-screen bg-gray-300 text-white text-center">
             <div className="flex md:gap-8 gap-2 justify-center py-2">
               <ButtonRouter
-                route={"home"}
+                route={"/"}
                 name={"Início"}
                 className="bg-gray-700 hover:bg-blue-900"
               />
               <ButtonRouter
-                route={"withUx"}
-                name={"Cardápio com UX"}
+                route={"noUx"}
+                name={"Cardápio sem UX"}
                 className="bg-flashy hover:bg-red-800"
               />
               <ButtonRouter route={"credits"} name={"Créditos"} />

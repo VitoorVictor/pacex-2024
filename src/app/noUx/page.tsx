@@ -194,7 +194,7 @@ export default function WithUX() {
   }, []);
 
   return (
-    <div className="min-w-screen min-h-screen flex flex-col items-center bg-gray-100 p-5 pt-0">
+    <div className="min-w-screen min-h-screen flex flex-col items-center bg-gray-200 p-5 pt-0">
       {loading ? (
         <div className="flex items-center justify-center mt-80">
           <div className="w-16 h-16 animate-spin">
@@ -206,7 +206,7 @@ export default function WithUX() {
           <div className="w-screen bg-gray-300 text-white text-center">
             <div className="flex md:gap-8 gap-2 justify-center py-2">
               <ButtonRouter
-                route={"home"}
+                route={"/"}
                 name={"Início"}
                 className="bg-gray-700 hover:bg-blue-900"
               />
