@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation"; // Importando o hook
+import { useRouter } from "next/navigation"; // Importando o hook
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import { Button } from "@/src/components/ui/button";
 import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
-  const searchParams = useSearchParams(); // Captura os parâmetros de URL
-  const monitorView = searchParams.get("monitor") === "true"; // Captura o valor do parâmetro 'monitor'
+  const [monitorView, setMonitorView] = useState(false);
   const [text] = useTypewriter({
     words: [
       "Vamos apresentar alguns elementos pensados em um designe com UX a seguir, e depois um exemplo prático de site.",
@@ -19,7 +19,7 @@ export default function Home() {
   });
   const background = "/img/background2.jfif";
   const router = useRouter();
-
+  console.log(monitorView);
   return (
     <div
       className={`min-w-screen min-h-screen flex items-center justify-center bg-cover bg-center`}
@@ -42,7 +42,7 @@ export default function Home() {
 
           {/* Botão Responsivo */}
           <div className="absolute bottom-32 sm:bottom-16">
-            <Button onClick={() => (window.location.href = "?monitor=true")}>
+            <Button onClick={() => setMonitorView(true)}>
               Continar experiência aqui
             </Button>
           </div>
