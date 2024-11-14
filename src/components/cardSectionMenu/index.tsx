@@ -1,5 +1,4 @@
-import { ChevronDown, ChevronUp, Star } from "lucide-react";
-import { useState } from "react";
+import { Star } from "lucide-react";
 
 /* eslint-disable @next/next/no-img-element */
 interface ICardProps {
@@ -21,17 +20,18 @@ export default function CardMenu({
   star,
   drink = false,
 }: ICardProps) {
-  const [descriptionView, setDescriptionView] = useState(false);
   return (
-    <div className="flex items-center justify-between md:w-[35rem] w-[22rem] my-2">
+    <div className="flex items-center justify-between w-full my-2">
       <div className="translate-x-[35%]  md:translate-x-[45%] drop-shadow-lg">
-        <img src={`/img/${img}.png`} alt={img} className="w-36 object-cover" />
+        <img
+          src={`/img/${img}.png`}
+          alt={img}
+          className="md:w-36 w-20 object-cover"
+        />
       </div>
-      <div className="flex flex-col bg-[#F9FEFD] py-4 md:gap-y-3 r gap-y-1 rounded-xl w-full px-[10%] shadow-xl">
-        <h1 className="md:text-2xl text-lg font-semibold">{name}</h1>
-        {descriptionView && (
-          <p className="text-sm text-gray-400">{description}</p>
-        )}
+      <div className="flex flex-col bg-[#F9FEFD] py-4 md:gap-y-3 gap-y-1 rounded-xl w-full px-[4%] pl-[8%] md:px-[10%] shadow-xl">
+        <h1 className="sm:text-2xl text-md font-semibold">{name}</h1>
+        <p className="text-sm text-gray-400">{description}</p>
         <div className="flex items-center gap-2">
           {Array.from({ length: 5 }, (_, index) => (
             <Star
@@ -50,23 +50,6 @@ export default function CardMenu({
             {`R$ ${price},00`}{" "}
           </p>
         </div>
-      </div>
-      <div>
-        {!descriptionView ? (
-          <ChevronDown
-            strokeWidth={2.25}
-            size={40}
-            className="rounded-full bg-white text-flashy -translate-x-5 shadow-md hover:bg-gray-200 cursor-pointer"
-            onClick={() => setDescriptionView((prevState) => !prevState)}
-          />
-        ) : (
-          <ChevronUp
-            strokeWidth={2.25}
-            size={40}
-            className="rounded-full bg-white text-flashy -translate-x-5 shadow-md hover:bg-gray-200 cursor-pointer"
-            onClick={() => setDescriptionView((prevState) => !prevState)}
-          />
-        )}
       </div>
     </div>
   );
