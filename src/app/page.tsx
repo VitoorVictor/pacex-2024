@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import ButtonRouter from "../components/ButtonRouter";
+
+import ButtonRouter from "@/components/ButtonRouter";
 
 export default function Home() {
   const background = "/img/background2.jfif";

@@ -2,8 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import ButtonRouter from "@/src/components/ButtonRouter";
-import CardSectionMenu from "@/src/components/CardSectionMenu";
+import ButtonRouter from "@/components/ButtonRouter";
+import CardSectionMenu from "@/components/CardSectionMenu";
 import React, { useState, useEffect } from "react";
 
 type MenuItem = {

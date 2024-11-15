@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import ButtonRouter from "@/src/components/ButtonRouter";
-import CardMenu from "@/src/components/CardMenu";
-import CardSectionMenu from "@/src/components/CardSectionMenu";
+import ButtonRouter from "@/components/ButtonRouter";
+import CardMenu from "@/components/CardMenu";
+import CardSectionMenu from "@/components/CardSectionMenu";
 import React, { useState, useEffect } from "react";
 
 const dataCard = [

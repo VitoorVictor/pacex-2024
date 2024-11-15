@@ -1,7 +1,7 @@
 // import ButtonRouter from "@/src/components/ButtonRouter";
 
-import ButtonRouter from "@/src/components/ButtonRouter";
-import { CardProfile } from "@/src/components/CustomProfile";
+import ButtonRouter from "@/components/ButtonRouter";
+import { CardProfile } from "@/components/CustomProfile";
 
 const teamMembers = [
   {

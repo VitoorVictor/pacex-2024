@@ -1,4 +1,4 @@
-import ButtonRouter from "@/src/components/ButtonRouter";
+import ButtonRouter from "@/components/ButtonRouter";
 
 export default function Explanation() {
   return (
