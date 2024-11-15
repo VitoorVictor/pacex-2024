@@ -11,7 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        flashy: "#F53B50",
+        flashy: "#AD2938",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

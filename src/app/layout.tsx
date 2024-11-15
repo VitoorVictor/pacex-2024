@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Bitter } from "next/font/google";
-import { Toaster } from "../components/ui/toaster";
 
 const bitter = Bitter({
   subsets: ["latin"],
@@ -24,7 +23,6 @@ export default function RootLayout({
       <body className={`antialiased ${bitter.className}`}>
         {" "}
         <main>{children}</main>
-        <Toaster />
       </body>
     </html>
   );

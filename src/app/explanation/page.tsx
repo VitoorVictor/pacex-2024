@@ -6,8 +6,7 @@ export default function Explanation() {
       <div className="container mx-auto px-4 py-10">
         <section className="bg-white p-6 md:p-10 rounded-lg shadow-md text-gray-800">
           <h1 className="text-xl md:text-2xl font-bold text-black mb-2">
-            O QUE É?{" "}
-            <span className="text-red-600">EXPERIÊNCIA DO USUÁRIO</span>
+            O QUE É? <span className="text-flashy">EXPERIÊNCIA DO USUÁRIO</span>
           </h1>
           <p className="text-sm md:text-base">
             Experiência do Usuário (UX) é como uma pessoa se sente ao usar um
@@ -59,22 +58,8 @@ export default function Explanation() {
             EXEMPLOS
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Exemplo 1: Componentes UX */}
+            {/* Exemplo 1: Site sem UX */}
             <div className="bg-white p-4 flex flex-col items-center">
-              <h3 className="text-lg font-semibold mb-2 text-black">
-                Componentes UX
-              </h3>
-              <p className="text-sm text-gray-600 mb-4 text-center">
-                Exemplos de componentes bem desenhados para melhorar a
-                experiência do usuário.
-              </p>
-              <ButtonRouter route={"/exemple"} name={"Componentes UX"}>
-                Ver Componentes
-              </ButtonRouter>
-            </div>
-
-            {/* Exemplo 2: Site sem UX */}
-            <div className="bg-white p-4  border-x-2 border-gray-300 flex flex-col items-center">
               <h3 className="text-lg font-semibold mb-2 text-black">
                 Site sem UX
               </h3>
@@ -82,13 +67,15 @@ export default function Explanation() {
                 Um site com pouca atenção à experiência do usuário, dificultando
                 a navegação.
               </p>
-              <ButtonRouter route={"/noUx"} name={"Site sem UX"}>
-                Ver Exemplo
-              </ButtonRouter>
+              <ButtonRouter
+                route={"/noUx"}
+                name={"Site sem UX"}
+                className="mt-auto"
+              />
             </div>
 
-            {/* Exemplo 3: Site com UX */}
-            <div className="bg-white p-4  flex flex-col items-center">
+            {/* Exemplo 2: Site com UX */}
+            <div className="bg-white p-6 flex flex-col items-center  md:border-x border-y md:border-y-0 border-gray-300 ">
               <h3 className="text-lg font-semibold mb-2 text-black">
                 Site com UX
               </h3>
@@ -96,9 +83,27 @@ export default function Explanation() {
                 Um site otimizado para proporcionar uma navegação fácil e
                 intuitiva.
               </p>
-              <ButtonRouter route={"/withUx"} name={"Site com UX"}>
-                Ver Exemplo
-              </ButtonRouter>
+              <ButtonRouter
+                route={"/withUx"}
+                name={"Site com UX"}
+                className="mt-auto"
+              />
+            </div>
+
+            {/* Exemplo 3: Componentes UX */}
+            <div className="bg-white p-4 flex flex-col items-center">
+              <h3 className="text-lg font-semibold mb-2 text-black">
+                Créditos
+              </h3>
+              <p className="text-sm text-gray-600 mb-4 text-center">
+                Acesse para ver todos os ingrantes que participaram da criação
+                desse projeto do pacex 2024
+              </p>
+              <ButtonRouter
+                route={"/credis"}
+                name={"Créditos"}
+                className="mt-auto"
+              />
             </div>
           </div>
         </section>

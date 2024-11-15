@@ -21,7 +21,7 @@ export default function Home() {
         <h1 className="font-bold text-2xl sm:text-5xl ">
           Bem-vindo ao Pacex 2024
         </h1>
-        <h2 className="font-semibold text-sm sm:text-xl  pb-3 border-b-4 border-red-700 my-2 sm:my-4 text-red-700">
+        <h2 className="font-semibold text-sm sm:text-xl  pb-3 border-b-4 border-flashy my-2 sm:my-4 text-flashy">
           User Experience (Experiência do Usuário)
         </h2>
       </div>

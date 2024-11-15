@@ -5,10 +5,9 @@ interface ICardProps {
   img: string;
   name: string;
   description: string;
-  count: number;
+  count: string;
   star: number;
   price: number;
-  drink?: boolean;
 }
 
 export default function CardMenu({
@@ -18,7 +17,6 @@ export default function CardMenu({
   count,
   price,
   star,
-  drink = false,
 }: ICardProps) {
   return (
     <div className="flex items-center justify-between w-full my-2">
@@ -43,9 +41,7 @@ export default function CardMenu({
           ))}
         </div>
         <div className="flex justify-between items-center">
-          <p className="md:text-sm text-gray-500 font-medium">
-            {drink ? `${count} ml` : `${count} g`}
-          </p>
+          <p className="md:text-sm text-gray-500 font-medium">{count}</p>
           <p className="md:text-lg text-flashy font-bold">
             {`R$ ${price},00`}{" "}
           </p>
