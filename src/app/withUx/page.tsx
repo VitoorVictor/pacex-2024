@@ -282,7 +282,7 @@ export default function WithUX() {
   };
 
   return (
-    <div className="min-w-screen min-h-screen flex flex-col items-center bg-gray-100 p-5 pt-0  overflow-x-hidden">
+    <div className="min-w-screen min-h-screen flex flex-col items-center bg-gray-100 p-5 pt-0 overflow-x-hidden">
       {loading ? (
         // Exibindo o spinner enquanto carrega
         <div className="flex items-center justify-center mt-80">
@@ -293,7 +293,7 @@ export default function WithUX() {
       ) : (
         <>
           {/* Banner */}
-          <div className="w-screen border-b border-gray-500 text-white flex md:justify-between justify-center px-10 items-center">
+          <div className="w-full border-b border-gray-500 text-white flex md:justify-between justify-center px-10 items-center">
             <h1 className="font-bold text-black text-2xl hidden md:flex">
               PACEX-2024
             </h1>
