@@ -2,7 +2,7 @@
 "use client";
 
 import ButtonRouter from "@/components/ButtonRouter";
-import { CardSectionMenu } from "@/components/CardSectionMenu";
+import { CardItemMenu } from "@/components/CardItemMenu";
 import { CardMenuCategory } from "@/components/CardMenuCategory";
 import React, { useState, useEffect } from "react";
 
@@ -220,7 +220,7 @@ export default function WithUX() {
     switch (selectedCategory) {
       case "saladas":
         return dataSectionCard.saladas.map((item, index) => (
-          <CardSectionMenu
+          <CardItemMenu
             img={item.img}
             name={item.nome}
             count={item.quantidade}
@@ -232,7 +232,7 @@ export default function WithUX() {
         ));
       case "pizzas":
         return dataSectionCard.pizzas.map((item, index) => (
-          <CardSectionMenu
+          <CardItemMenu
             img={item.img}
             name={item.nome}
             count={item.quantidade}
@@ -244,7 +244,7 @@ export default function WithUX() {
         ));
       case "sobremesas":
         return dataSectionCard.sobremesas.map((item, index) => (
-          <CardSectionMenu
+          <CardItemMenu
             img={item.img}
             name={item.nome}
             count={item.quantidade}
@@ -256,7 +256,7 @@ export default function WithUX() {
         ));
       case "massas":
         return dataSectionCard.massas.map((item, index) => (
-          <CardSectionMenu
+          <CardItemMenu
             img={item.img}
             name={item.nome}
             count={item.quantidade}
@@ -268,7 +268,7 @@ export default function WithUX() {
         ));
       case "bebidas":
         return dataSectionCard.bebidas.map((item, index) => (
-          <CardSectionMenu
+          <CardItemMenu
             img={item.img}
             name={item.nome}
             count={item.quantidade}

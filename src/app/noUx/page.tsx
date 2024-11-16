@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import ButtonRouter from "@/components/ButtonRouter";
-import { CardSectionMenu } from "@/components/CardSectionMenu";
+import { CardItemMenu } from "@/components/CardItemMenu";
 import React, { useState, useEffect } from "react";
 
 type MenuItem = {
@@ -228,7 +228,7 @@ export default function WithUX() {
 
           <div className="py-6 px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 pt-12">
             {shuffledItems.map((item, index) => (
-              <CardSectionMenu
+              <CardItemMenu
                 img={item.img}
                 name={item.nome}
                 count={item.quantidade}

@@ -10,7 +10,7 @@ interface ICardProps {
   price: number;
 }
 
-export const CardSectionMenu = ({
+export const CardItemMenu = ({
   img,
   name,
   description,
