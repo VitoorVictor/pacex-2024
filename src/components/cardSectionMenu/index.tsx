@@ -10,7 +10,7 @@ interface ICardProps {
   price: number;
 }
 
-export default function CardMenu({
+export default function CardSectionMenu({
   img,
   name,
   description,
