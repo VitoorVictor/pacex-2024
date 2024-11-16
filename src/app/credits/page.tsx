@@ -33,7 +33,7 @@ const teamMembers = [
     ra: "60002150",
     img: "leonardo.jpeg",
     linkedin: "https://www.linkedin.com/in/leonardo-santos-bba558140/",
-    github: "",
+    github: "https://github.com/Rankow",
     instagram: "https://www.instagram.com/leo.ssantoss2/",
   },
   {
