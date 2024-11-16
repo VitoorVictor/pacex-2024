@@ -10,14 +10,14 @@ interface ICardProps {
   price: number;
 }
 
-export default function CardSectionMenu({
+export const CardSectionMenu = ({
   img,
   name,
   description,
   count,
   price,
   star,
-}: ICardProps) {
+}: ICardProps) => {
   return (
     <div className="flex items-center justify-between w-full my-2">
       <div className="translate-x-[35%]  md:translate-x-[45%] drop-shadow-lg">
@@ -49,4 +49,4 @@ export default function CardSectionMenu({
       </div>
     </div>
   );
-}
+};

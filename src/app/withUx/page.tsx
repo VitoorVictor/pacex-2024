@@ -2,8 +2,8 @@
 "use client";
 
 import ButtonRouter from "@/components/ButtonRouter";
-import CardMenu from "@/components/CardMenu";
-import CardSectionMenu from "@/components/CardSectionMenu";
+import { CardSectionMenu } from "@/components/CardSectionMenu";
+import { CardMenuCategory } from "@/components/CardMenuCategory";
 import React, { useState, useEffect } from "react";
 
 const dataCard = [
@@ -331,7 +331,7 @@ export default function WithUX() {
           {/* Espaço para ícones de comida */}
           <div className="flex justify-start space-x-6 pt-6 pb-12 overflow-x-auto w-full border-b-2 ">
             {filteredData.map((item, index) => (
-              <CardMenu
+              <CardMenuCategory
                 img={item.img}
                 name={item.nome}
                 count={item.quantidade}

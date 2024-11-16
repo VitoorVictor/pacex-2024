@@ -7,7 +7,7 @@ interface ICardProps {
   onAction: () => void;
 }
 
-export default function CardMenu({ img, name, onAction }: ICardProps) {
+export const CardMenuCategory = ({ img, name, onAction }: ICardProps) => {
   return (
     <div
       className="flex items-center justify-between md:min-w-[20rem] min-w-[15rem] flex-shrink-0"
@@ -25,4 +25,4 @@ export default function CardMenu({ img, name, onAction }: ICardProps) {
       </div>
     </div>
   );
-}
+};
