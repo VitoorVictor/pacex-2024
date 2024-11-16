@@ -168,7 +168,7 @@ export default function WithUX() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -202,7 +202,7 @@ export default function WithUX() {
         </div>
       ) : (
         <>
-          <div className="w-screen border-b border-gray-500 bg-gray-300 text-white flex md:justify-between justify-center px-10 items-center">
+          <div className="w-screen border-b border-gray-500 text-white flex md:justify-between justify-center px-10 items-center">
             <h1 className="font-bold text-black text-2xl hidden md:flex">
               PACEX-2024
             </h1>

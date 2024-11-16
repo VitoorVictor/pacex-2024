@@ -100,7 +100,7 @@ export default function Explanation() {
                 desse projeto do pacex 2024
               </p>
               <ButtonRouter
-                route={"/credis"}
+                route={"/credits"}
                 name={"Créditos"}
                 className="mt-auto"
               />
