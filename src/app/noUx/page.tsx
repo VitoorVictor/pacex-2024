@@ -224,6 +224,7 @@ export default function WithUX() {
           <div className="w-full bg-flashy text-white p-6 text-center rounded-lg mt-4">
             <h1 className="text-3xl font-bold">Bem-vindo ao Nosso Cardápio!</h1>
             <p className="text-xl mt-2">Encontre suas comidas favoritas</p>
+            <p className="text-sm mt-8">Modelo: sem Ux</p>
           </div>
 
           <div className="py-6 px-4 grid grid-cols-1 lg:grid-cols-2 gap-6 pt-12">
