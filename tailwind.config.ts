@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xss: "390px",
+      },
       colors: {
         flashy: "#AD2938",
 

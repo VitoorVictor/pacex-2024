@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
 import ButtonRouter from "@/components/ButtonRouter";
 import CardSectionMenu from "@/components/CardSectionMenu";
 import React, { useState, useEffect } from "react";
